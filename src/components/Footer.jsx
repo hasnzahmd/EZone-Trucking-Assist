@@ -6,8 +6,8 @@ const Footer = () => {
       <div className="flex flex-col gap-10">
         <h1 className=" font-bold text-4xl sm:max-w-[30rem]">Always loaded and profitable</h1>
         <a href="tel:+1234567890" className="text-orange-200 text-center bg-black rounded-lg p-4 font-bold text-xl sm:max-w-[26rem] sm:text-2xl md:text-3xl">Call Now (786) 785-9800</a>
-        <h1 className='text-3xl font-bold font-serif'>
-          <span className= 'text-blue-900'>E</span><span className='text-white'>Z</span><span className='text-blue-900'>one</span> <span className='text-white'>trucking</span><span className='text-blue-900'>assist</span>
+        <h1 className='text-2xl sm:text-3xl sm:text-nowrap font-bold font-serif bg-[#f9ddc9] p-[0.7rem] rounded-full self-start'>
+          <span className= 'text-blue-900'>E</span><span className='text-orange-500'>Z</span><span className='text-blue-900'>one</span> <span className='text-orange-500'>trucking</span><span className='text-blue-900'>assist</span>
         </h1>
         <div>
           <p >A Service By:</p>
