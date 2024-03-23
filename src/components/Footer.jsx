@@ -1,7 +1,7 @@
 
 const Footer = () => {
   return (
-    <footer className="flex justify-center flex-col text-white px-8 py-16 gap-10 bg-[#e87726] sm:flex-row sm:justify-between sm:px-20">
+    <footer className="flex justify-center flex-col text-white px-8 py-16 gap-10 bg-[#e87726] sm:flex-row sm:justify-between md:px-20">
 
       <div className="flex flex-col gap-10">
         <h1 className=" font-bold text-4xl sm:max-w-[30rem]">Always loaded and profitable</h1>

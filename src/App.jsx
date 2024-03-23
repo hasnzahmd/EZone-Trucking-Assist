@@ -10,7 +10,7 @@ const App = () => {
   return (
     <>
       <Header />
-      <div className="pt-24 bg-gray-300">
+      <div className="pt-24 px-8 md:px-16 lg:px-20">
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/pricing" element={<Pricing />} />

@@ -20,7 +20,7 @@ const Header = () => {
 
   return (
 
-    <header className={`${isMenuOpen ? 'h-64 pt-4 flex-wrap' : ''} flex justify-between px-8 md:px-[5rem] h-24 sm:h-24 items-center fixed top-0 w-full z-50 bg-white`}>
+    <header className={`${isMenuOpen ? 'h-64 pt-4 flex-wrap' : ''} flex justify-between px-8 md:px-20 lg:px-24 h-24 sm:h-24 items-center fixed top-0 w-full z-50 bg-white`}>
 
       <NavLink to={`/`}>
         <h1 className='text-2xl lg:text-3xl font-bold cursor-pointer font-serif'>
