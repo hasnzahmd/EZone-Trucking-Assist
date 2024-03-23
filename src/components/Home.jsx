@@ -90,7 +90,7 @@ const Home = () => {
                 icon={<FaRegPaperPlane size={70} color="#e87726" />}
                 title="Documents"
                 description="MC Authority, Certificate of Insurance, W9, Form"
-                btnText='start today'
+                btnText='send documents'
               />
               <GetStartedCard
                 icon={<LiaUserEditSolid size={70} color="#e87726" />}
@@ -172,7 +172,64 @@ const Home = () => {
           </div>
         </section>
 
-        
+        <section className="flex bg-[#e87726] bg-opacity-20 justify-center  w-screen -ml-8 md:-ml-16 lg:-ml-20">
+          <div className="flex flex-col sm:grid grid-cols-3 gap-5 py-16 px-8 md:px-16 lg:px-20">
+            <div className="flex flex-col w-full gap-8">
+              <h2 className="text-4xl font-bold text-[#e87726]">
+                Tell us about your goals and lets us help
+              </h2>
+              <p className="text-lg">
+                Having some idea of what your company needs or what are your hauling plans and desires
+                will help us provide the best dispatch service solution for your trucking company.​
+                Complete the form now and start today!
+              </p>
+            </div>
+            <div className="p-4">
+              <div className="flex flex-col gap-8 w-full">
+                <select name="" id="" className="border border-[#e87726] rounded-md py-3 px-2">
+                  <option disabled value="Interested Plans">Interested Plans</option>
+                  <option value="Percentage">Percentage</option>
+                  <option value="Weekly">Weekly</option>
+                  <option value="Prepaid">Prepaid</option>
+                </select>
+                <select name="" id="" className="border border-[#e87726] rounded-md py-3 px-2">
+                  <option disabled value="Interested Plans">How many trucks do you have?</option>
+                  <option value="1 truck">1 truck</option>
+                  <option value="2 trucks">1 trucks</option>
+                  <option value="Between 3 - 10 trucks">Between 3 - 10 trucks</option>
+                </select>
+                <input type="text" placeholder="Email Address" className="border border-[#e87726] rounded-md py-3 px-3 w-full placeholder:text-[#e87726] placeholder:font-bold placeholder:text-sm"/>
+              </div>
+              <div className="mt-6">
+                <div className="flex flex-col gap-1">
+                  <span className="font-bold">Which type of truck do you have?</span>
+                  <label className="flex items-center gap-x-2">
+                    <input type="checkbox" className=""/>
+                      <span>Dry Van</span>
+                  </label>
+                  <label className="flex items-center gap-x-2">
+                    <input type="checkbox" className=""/>
+                      <span>Reefer</span>
+                  </label>
+                  <label className="flex items-center gap-x-2">
+                    <input type="checkbox" className=""/>
+                      <span>Flatbed</span>
+                  </label>
+                  <label className="flex items-center gap-x-2">
+                    <input type="checkbox" className=""/>
+                      <span>Power only</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div className="w-full p-4 flex flex-col gap-8">
+              <input type="text" placeholder="Income desired?" className="border border-[#e87726] p-3 w-full placeholder:text-[#e87726] placeholder:text-sm placeholder:font-bold"/>
+              <input type="text" placeholder="First Name" className="border border-[#e87726] p-3 w-full placeholder:text-[#e87726] placeholder:text-sm placeholder:font-bold"/>
+              <input type="text" placeholder="Phone" className="border border-[#e87726] p-3 w-full placeholder:text-[#e87726] placeholder:text-sm placeholder:font-bold"/> 
+              <Button text='start today!' width={true}/>
+            </div>
+          </div>
+        </section>      
       </main>
   )
 }
