@@ -1,8 +1,8 @@
 import { Routes, Route } from 'react-router-dom';
-import Home from './components/Home';
-import Pricing from './components/Pricing';
-import FAQs from './components/FAQs';
-import Contact from './components/Contact';
+import Home from './pages/Home';
+import Pricing from './pages/Pricing';
+import FAQs from './pages/FAQs';
+import Contact from './pages/Contact';
 import Header from './components/Header';
 import Footer from './components/Footer';
 

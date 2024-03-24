@@ -1,9 +1,9 @@
 import PaymentCard from "./PaymentCard"
 
-const PaymentPlan = () => {
+const PaymentPlan = ({pricingPage}) => {
   return (
-    <div className="flex flex-col gap-10 sm:gap-16 py-12 justify-center">
-        <h1 className="text-white text-5xl font-bold self-center text-center">Choose the Payment Plan</h1>
+    <div className={`flex flex-col gap-10 sm:gap-16 ${pricingPage ? 'sm:py-0 py-16' : 'py-12'}`}>
+        <h1 className={`${pricingPage ? ' text-gray-800 opacity-90 sm:-mt-20 mb-10 sm:mb-20' : 'text-white'} text-4xl sm:text-5xl font-bold self-center text-center`}>{pricingPage ? 'Plans & Pricing' : 'Choose the Payment Plan'}</h1>
         <div className="flex flex-col gap-12 sm:flex-row items-center md:px-6 lg:px-20">
             <PaymentCard
                 h1='Percentage'

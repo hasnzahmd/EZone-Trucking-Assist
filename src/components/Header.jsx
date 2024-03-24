@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import { GiHamburgerMenu } from "react-icons/gi";
+import Button from './Button';
 
 const Header = () => {
 
@@ -20,7 +21,7 @@ const Header = () => {
 
   return (
 
-    <header className={`${isMenuOpen ? 'h-64 pt-4 flex-wrap' : ''} flex justify-between px-8 md:px-20 lg:px-24 h-24 sm:h-24 items-center fixed top-0 w-full z-50 bg-white`}>
+    <header className={`${isMenuOpen ? 'h-80 pt-4 flex-wrap' : ''} flex justify-between px-8 md:px-20 lg:px-24 h-24 sm:h-24 items-center fixed top-0 w-full z-50 bg-white`}>
 
       <NavLink to={`/`}>
         <h1 className='text-2xl lg:text-3xl font-bold cursor-pointer font-serif'>
@@ -34,7 +35,7 @@ const Header = () => {
 
       <nav className={`${isMenuOpen ? 'w-full flex justify-center' : 'hidden'} sm:block`}>
 
-        <ul className={`${isMenuOpen ? 'flex-col items-center' : ''} flex gap-4 sm:gap-5 md:gap-7 lg:gap-10`}>
+        <ul className={`${isMenuOpen ? 'flex-col items-center' : ''} flex gap-4 items-center sm:gap-5 md:gap-7 lg:gap-10`}>
           <li>
             <NavLink to="/" 
             className={({ isActive }) => `hover:border-b-2 ${isActive ? 'text-orange-500 font-bold hover:border-orange-500' : 'text-blue-900 border-blue-900'}`}>
@@ -59,6 +60,7 @@ const Header = () => {
                 Contact
             </NavLink>
           </li>
+          <Button text='start today'/>
         </ul>
 
       </nav>
