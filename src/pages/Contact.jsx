@@ -1,8 +1,12 @@
+import { FaPhoneAlt } from "react-icons/fa";
+import { IoMdMail } from "react-icons/io";
+import Button from "../components/Button";
+
 const Contact = () => {
   return (
     <div className="flex flex-col items-center w-full">
       <div className="container">
-        <div className="flex justify-center py-16 items-center gap-12 mobile:flex-col mobile:px-0">
+        <div className="flex justify-center py-14 items-center gap-12 flex-col sm:flex-row">
           <div className="w-full grid gap-8">
             <div className="flex flex-col gap-2">
               <div className="text-xl font-bold">Support Office</div>
@@ -15,19 +19,19 @@ const Contact = () => {
             <div className="flex flex-col gap-2">
               <div className="text-xl font-bold">Contact Details :</div>
               <div className="flex items-center gap-1">
-                <i className="fas fa-phone-alt text-blue-400"></i>
+                <FaPhoneAlt color="#60a5fa"/>
                 +1 786 758 9800
               </div>
               <div className="flex items-center gap-1">
-                <i className="fas fa-envelope text-yellow-300"></i>
+                <IoMdMail color="#fde047"/>
                 hello@truckingassist.com
               </div>
             </div>
             <div className="flex flex-col gap-2">
               <div className="text-xl font-bold">Affiliation Relations :</div>
-              <a className="hover:text-primary hover:cursor-pointer" href="g">
-                <i className="fas fa-envelope text-yellow-300"></i>
-                affiliation@truckingassist.com
+              <a className="hover:text-primary hover:cursor-pointer flex items-center" href="g">
+                <IoMdMail color="#fde047" />
+                &nbsp;affiliation@truckingassist.com
               </a>
             </div>
           </div>
@@ -45,26 +49,26 @@ const Contact = () => {
                 <input
                   type="text"
                   placeholder="Name*"
-                  className="input input-bordered input-accent placeholder:text-accent w-full"
+                  className="border border-[#e87726] rounded-md py-3 px-3 w-full placeholder:text-[#e87726] placeholder:text-sm"
                 />
                 <input
                   type="text"
                   placeholder="Email*"
-                  className="input input-bordered input-accent placeholder:text-accent w-full"
+                  className="border border-[#e87726] rounded-md py-3 px-3 w-full placeholder:text-[#e87726] placeholder:text-sm"
                 />
                 <input
                   type="text"
                   placeholder="Phone*"
-                  className="input input-bordered input-accent placeholder:text-accent w-full"
+                  className="border border-[#e87726] rounded-md py-3 px-3 w-full placeholder:text-[#e87726] placeholder:text-sm"
                 />
                 <div>
                   <textarea
-                    className="w-full h-full textarea input-accent input input-bordered placeholder:text-accent"
+                    className="h-full border border-[#e87726] rounded-md py-3 px-3 w-full placeholder:text-[#e87726] placeholder:text-sm"
                     placeholder="Message"
                   ></textarea>
                 </div>
               </div>
-              <div className="btn btn-accent w-full">Send Messege</div>
+              <Button text='send message' width={true}/>
             </div>
           </div>
         </div>

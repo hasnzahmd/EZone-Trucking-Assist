@@ -223,9 +223,9 @@ const Home = () => {
                         </div>
                     </div>
                     <div className="w-full p-4 flex flex-col gap-8">
-                        <input type="text" placeholder="Income desired?" className="border border-[#e87726] p-3 w-full placeholder:text-[#e87726] placeholder:text-sm placeholder:font-bold" />
-                        <input type="text" placeholder="First Name" className="border border-[#e87726] p-3 w-full placeholder:text-[#e87726] placeholder:text-sm placeholder:font-bold" />
-                        <input type="text" placeholder="Phone" className="border border-[#e87726] p-3 w-full placeholder:text-[#e87726] placeholder:text-sm placeholder:font-bold" />
+                        <input type="text" placeholder="Income desired?" className="border rounded-md  border-[#e87726] p-3 w-full placeholder:text-[#e87726] placeholder:text-sm placeholder:font-bold" />
+                        <input type="text" placeholder="First Name" className="border rounded-md  border-[#e87726] p-3 w-full placeholder:text-[#e87726] placeholder:text-sm placeholder:font-bold" />
+                        <input type="text" placeholder="Phone" className="border rounded-md  border-[#e87726] p-3 w-full placeholder:text-[#e87726] placeholder:text-sm placeholder:font-bold" />
                         <Button text='start today!' width={true} />
                     </div>
                 </div>
