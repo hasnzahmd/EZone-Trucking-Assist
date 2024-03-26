@@ -4,31 +4,24 @@ import FAQItem from './FAQItem';
 
 const FAQ = () => {
     const [openIndex, setOpenIndex] = useState(null);
-  
+
     const toggleOpen = (index) => {
-      setOpenIndex((prevIndex) => (prevIndex === index ? null : index));
+        setOpenIndex((prevIndex) => (prevIndex === index ? null : index));
     };
-  
+
     return (
-      <div className="w-full flex flex-col gap-8 px-16">
-        {faqsData.map((faq, index) => (
-          <FAQItem
-            key={index}
-            question={faq.question}
-            answer={faq.answer}
-            isOpen={index === openIndex}
-            toggleOpen={() => toggleOpen(index)}
-          />
-        ))}
-      </div>
+        <div className="w-full flex flex-col gap-8 px-16">
+            {faqsData.map((faq, index) => (
+                <FAQItem
+                    key={index}
+                    question={faq.question}
+                    answer={faq.answer}
+                    isOpen={index === openIndex}
+                    toggleOpen={() => toggleOpen(index)}
+                />
+            ))}
+        </div>
     );
 };
 
 export default FAQ
-
-
-
-
-
-
-
