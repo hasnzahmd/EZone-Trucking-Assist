@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { GiHamburgerMenu } from "react-icons/gi";
+import CustomNavLink from './CustomNavLink';
 import Button from './Button';
 
 const Header = () => {
@@ -17,17 +18,6 @@ const Header = () => {
         return () => window.removeEventListener('resize', handleResize);
     }, [isMenuOpen]);
 
-    const navLinkClass = isActive => `hover:border-b-2 ${isActive ? 'text-orange-500 font-bold hover:border-orange-500' : 'text-blue-900 border-blue-900'}`;
-
-    const NavLinkWithClose = ({ to, children }) => (
-        <NavLink
-            to={to}
-            className={({ isActive }) => navLinkClass(isActive)}
-            onClick={() => setIsMenuOpen(false)}
-        >
-            {children}
-        </NavLink>
-    );
 
     return (
         <header className={`${isMenuOpen ? 'h-80 pt-4 flex-wrap' : ''} flex justify-between px-8 md:px-20 lg:px-24 h-24 sm:h-24 items-center fixed top-0 w-full z-50 bg-white`}>
@@ -46,9 +36,9 @@ const Header = () => {
                 <ul className={`${isMenuOpen ? 'flex-col items-center' : ''} flex gap-4 items-center sm:gap-5 md:gap-7 lg:gap-10`}>
                     {['/', '/pricing', '/faq', '/contact'].map((path, index) => (
                         <li key={index}>
-                            <NavLinkWithClose to={path}>
+                            <CustomNavLink to={path} setIsMenuOpen={setIsMenuOpen}>
                                 {['Home', 'Plans & Pricing', 'FAQs', 'Contact'][index]}
-                            </NavLinkWithClose>
+                            </CustomNavLink>
                         </li>
                     ))}
                     <Button text='start today' onClick={() => setIsMenuOpen(false)} />
