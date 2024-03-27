@@ -28,7 +28,7 @@ const Header = () => {
                 </h1>
             </NavLink>
 
-            <button className='sm:hidden' aria-label='Toggle menu' onClick={() => setIsMenuOpen(!isMenuOpen)}>
+            <button className={`sm:hidden p-1 rounded duration-200 ease-in-out active:scale-75 ${isMenuOpen && 'bg-gray-300'}`} onClick={() => setIsMenuOpen(!isMenuOpen)}>
                 <GiHamburgerMenu size='28' color='#1e3a8a' />
             </button>
 
