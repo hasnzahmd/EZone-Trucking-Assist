@@ -22,11 +22,11 @@ const Header = () => {
     return (
         <header className={`${isMenuOpen ? 'h-80 pt-4 flex-wrap' : ''} flex justify-between px-8 md:px-20 lg:px-24 h-24 sm:h-24 items-center fixed top-0 w-full z-50 bg-white`}>
 
-            <NavLink to={`/`}>
+            <CustomNavLink to={`/`} logo={true}>
                 <h1 className='text-2xl lg:text-3xl font-bold cursor-pointer font-serif'>
                     <span className='text-blue-900'>E</span><span className='text-orange-500'>Z</span><span className='text-blue-900'>one</span> <span className='text-orange-500'>trucking</span><span className='text-blue-900'>assist</span>
                 </h1>
-            </NavLink>
+            </CustomNavLink>
 
             <button className={`sm:hidden p-1 rounded duration-200 ease-in-out active:scale-75 ${isMenuOpen && 'bg-gray-300'}`} onClick={() => setIsMenuOpen(!isMenuOpen)}>
                 <GiHamburgerMenu size='28' color='#1e3a8a' />

@@ -1,6 +1,6 @@
 import { NavLink, useLocation } from 'react-router-dom';
 
-const CustomNavLink = ({ to, children, setIsMenuOpen }) => {
+const CustomNavLink = ({ to, children, logo, setIsMenuOpen }) => {
 
     const location = useLocation();
     const scrollToTop = () => {
@@ -12,8 +12,8 @@ const CustomNavLink = ({ to, children, setIsMenuOpen }) => {
     return (
         <NavLink
             to={to}
-            className={({ isActive }) => `hover:border-b-2 ${isActive ? 'text-orange-500 font-bold hover:border-orange-500' : 'text-blue-900 border-blue-900'}`}
-            onClick={() => { setIsMenuOpen(false); scrollToTop(); }}
+            className={({ isActive }) => `${logo ? '' : 'hover:border-b-2 '}${isActive ? 'text-orange-500 font-bold hover:border-orange-500' : 'text-blue-900 border-blue-900'}`}
+            onClick={() => { !logo && setIsMenuOpen(false); scrollToTop(); }}
         >
             {children}
         </NavLink>
