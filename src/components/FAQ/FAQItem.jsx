@@ -5,14 +5,22 @@ import { FaFacebook, FaTwitter } from 'react-icons/fa';
 const FAQItem = ({ question, answer, isOpen, toggleOpen }) => {
     const variants = {
         open: { opacity: 1, height: 'auto' },
-        collapsed: { opacity: 0, height: 0 }
+        collapsed: { opacity: 0, height: 0 },
     };
+
+    const renderAnswerText = (text) => text.split('\n').map((line, index) => (
+        <React.Fragment key={index}>
+            {line}
+            <br />
+        </React.Fragment>
+    ));
 
     return (
         <div className="border-b border-gray-300 pb-8">
             <button
                 className="flex justify-between items-center w-full py-2 text-left text-lg font-medium"
                 onClick={toggleOpen}
+                aria-expanded={isOpen}
             >
                 {question}
                 <svg
@@ -32,13 +40,7 @@ const FAQItem = ({ question, answer, isOpen, toggleOpen }) => {
                 className="overflow-hidden"
             >
                 <div className="py-2 text-orange-500">
-                    {
-                        answer.split('\n').map((line, index) => (
-                            <React.Fragment key={index}>
-                                {line}
-                                <br />
-                            </React.Fragment>
-                        ))}
+                    {renderAnswerText(answer)}
                     <div className="mt-8 flex space-x-2">
                         <FaFacebook className="text-black" />
                         <FaTwitter className="text-black" />
@@ -48,6 +50,5 @@ const FAQItem = ({ question, answer, isOpen, toggleOpen }) => {
         </div>
     );
 };
-
 
 export default FAQItem;
