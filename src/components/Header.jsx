@@ -19,12 +19,11 @@ const Header = () => {
 
     const navLinkClass = isActive => `hover:border-b-2 ${isActive ? 'text-orange-500 font-bold hover:border-orange-500' : 'text-blue-900 border-blue-900'}`;
 
-    // Custom NavLink component to include close menu behavior
     const NavLinkWithClose = ({ to, children }) => (
         <NavLink
             to={to}
             className={({ isActive }) => navLinkClass(isActive)}
-            onClick={() => setIsMenuOpen(false)} // Close menu on click
+            onClick={() => setIsMenuOpen(false)}
         >
             {children}
         </NavLink>
