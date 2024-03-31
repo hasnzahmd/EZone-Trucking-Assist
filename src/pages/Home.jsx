@@ -18,7 +18,7 @@ const Home = () => {
                     </div>
                     <Button text='hire a dispatcher today' />
                 </div>
-                <img src="/truck.webp" alt="truck" className=" size-fit self-center sm:w-[51%] md:size-[60%] ml-10 -mr-8 md:-mr-16 lg:-mr-20" />
+                <img src={`${import.meta.env.BASE_URL}/truck.webp`} alt="truck" className=" size-fit self-center sm:w-[51%] md:size-[60%] ml-10 -mr-8 md:-mr-16 lg:-mr-20" />
             </section>
 
             <section className="self-center flex flex-col gap-4 items-center pt-16 sm:px-2 md:px-0 sm:flex-row">
@@ -32,7 +32,7 @@ const Home = () => {
             </section>
 
             <section className="pt-20 flex flex-col md:flex-row gap-6 md:gap-12">
-                <div className="sm:size-[90%] md:size-[250%] -ml-8 -mr-8 md:-ml-16 lg:-ml-20"><img src="/man.jpg" alt="truck" /></div>
+                <div className="sm:size-[90%] md:size-[250%] -ml-8 -mr-8 md:-ml-16 lg:-ml-20"><img src={`${import.meta.env.BASE_URL}/man.jpg`} alt="truck" /></div>
                 <div className="flex gap-8 flex-col justify-center text-lg sm:text-base md:text-lg 1.5xl:-ml-[40rem] sm:items-center md:items-start">
                     <h1 className="font-bold text-4xl md:text-3xl lg:text-4xl">Hit the road on your<br />terms, you're the boss</h1>
                     <p className=" sm:px-24 md:px-0">
@@ -48,7 +48,7 @@ const Home = () => {
             </section>
 
             <section className="hidden sm:block mt-40 sm:mb-28 lg:mb-0 self-center w-[100vw] sm:px-10 lg:px-2 relative">
-                <img src="/man2.webp" alt="truck" className="w-full rounded-[2rem] shadow-2xl" />
+                <img src={`${import.meta.env.BASE_URL}/man2.webp`} alt="truck" className="w-full rounded-[2rem] shadow-2xl" />
                 <div className="absolute top-1/2 right-0 transform -translate-y-1/2 pr-16 flex flex-col sm:gap-2 md:gap-6 lg:gap-10">
                     <h2 className=" text-white font-bold sm:text-2xl md:text-4xl">Call us today, get loaded <br /> and be profitable now</h2>
                     <Button text='start today' />
@@ -77,7 +77,7 @@ const Home = () => {
 
             <section className="flex flex-col gap-10 items-center">
                 <div className=" justify-center -mt-32">
-                    <img src="/truck3.webp" alt="trucks" />
+                    <img src={`${import.meta.env.BASE_URL}/truck3.webp`} alt="trucks" />
                 </div>
                 <div className="flex flex-col gap-20 sm:gap-14">
                     <div className="flex justify-center text-center">
@@ -128,7 +128,7 @@ const Home = () => {
                         <Button text='hire a dispatcher today' width={true} />
                     </div>
                     <div className="flex flex-col w-full justify-end">
-                        <img src="/callgirl.webp" alt="caller" className="w-full" />
+                        <img src={`${import.meta.env.BASE_URL}/callgirl.webp`} alt="caller" className="w-full" />
                     </div>
                 </div>
             </section>

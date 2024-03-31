@@ -11,7 +11,7 @@ const Footer = () => {
                 </h1>
                 <div>
                     <p >A Service By:</p>
-                    <a href="https://www.thecalldesk.com" target="_blank" className="bg-[#f9ddc9] inline-block p-2 rounded-full mt-2 cursor-pointer"><img src="/calldesk.webp" alt="calldesk" className="h-6" /></a>
+                    <a href="https://www.thecalldesk.com" target="_blank" className="bg-[#f9ddc9] inline-block p-2 rounded-full mt-2 cursor-pointer"><img src={`${import.meta.env.BASE_URL}/calldesk.webp`} alt="calldesk" className="h-6" /></a>
                 </div>
                 <div className="bg-opacity-10 bg-black p-[0.7rem] rounded text-center font-medium sm:max-w-48 cursor-pointer transition duration-150 ease-in-out active:scale-90">
                     AFFILIATE PROGRAM

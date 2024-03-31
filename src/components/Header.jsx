@@ -1,4 +1,3 @@
-import { NavLink } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { GiHamburgerMenu } from "react-icons/gi";
 import CustomNavLink from './CustomNavLink';
